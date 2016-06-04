@@ -1,5 +1,4 @@
 require 'net/http'
-require 'oga'
 require 'open-uri'
 require 'zip'
 
@@ -23,15 +22,6 @@ def extract_zip(file, destination)
       zip_file.extract(f, fpath) unless File.exist?(fpath)
     end
   end
-end
-
-# Grab the download url from chromium.woolyss.com, but that is probably taken from https://download-chromium.appspot.com/ as well, so that's not needed
-def get_download_url
-    html = open('http://chromium.woolyss.com/')
-    document = Oga.parse_html(html.read)
-    link = document.css('#mac-64-bit-archive strong a.s')
-
-    link.attr('href')[0].value
 end
 
 def download_chromium(download_url)
