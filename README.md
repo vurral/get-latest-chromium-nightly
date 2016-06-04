@@ -4,9 +4,9 @@
 
 ## Installation
 
-I'm using ruby@2.3.0. The only thing you have to do is a `gem install rubyzip'.
+I'm using ruby@2.3.0. The only thing you have to do is a `gem install rubyzip`.
 
-Clone the repo with 'git clone git@github.com:kramsee/get-latest-chromium-nightly.git' and add following alias into your `~/.bash_profile`:
+Clone the repo with `git clone git@github.com:kramsee/get-latest-chromium-nightly.git` and add following alias into your `~/.bash_profile`:
 
     alias get_latest_chromium_nightly="ruby ~/path/to/get-latest-chromium-nightly/main.rb"
 
